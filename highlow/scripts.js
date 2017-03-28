@@ -5,11 +5,11 @@ $(document).ready(function(){
     $('button').click(function(){
         var guess = $('input').val();
         if(secret==guess){
-            $('body').append("You're Right!");
+            $('#message').html("You're Right!");
         } else if (guess>secret){
-            $('body').append("too high");
+            $('#message').append("too high");
         } else{
-       $('body').append("to low");     
+       $('#message').append("to low");     
         }
 
         
